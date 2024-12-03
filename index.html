@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">MinhaPágina</h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2 class="hero-title">Bem-vindo à MinhaPágina</h2>
+            <p class="hero-description">Crie páginas incríveis de forma simples!</p>
+            <button id="cta-button">Comece Agora</button>
+        </section>
+
+        <section id="sobre" class="about">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Dolorum velit, voluptatibus tempora eius architecto ullam consectetur, 
+                    temporibus quaerat, est illum provident obcaecati aut?
+                </p>
+
+                <div class="colaboradores">
+                    <div class="card">
+                        <img src="./img/person_placeholder.png" alt="Colaborador">
+                        <div class="card-content">
+                            <h3>José</h3>
+                            <p>Desenvolvedor Sênior</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/person_placeholder.png" alt="Colaborador">
+                        <div class="card-content">
+                            <h3>Maria</h3>
+                            <p>Desenvolvedor Pleno</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/person_placeholder.png" alt="Colaborador">
+                        <div class="card-content">
+                            <h3>João</h3>
+                            <p>Desenvolvedor Júnior</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/person_placeholder.png" alt="Colaborador">
+                        <div class="card-content">
+                            <h3>Marcelo</h3>
+                            <p>Desenvolvedor Júnior</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos" class="features">
+            <div class="container">
+                <h2>Recursos</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contato" class="contact">
+            <div class="container">
+                <h2>Fale Conosco</h2>
+                <form id="contact-form">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 MinhaPágina. Criado por DeVinicius.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

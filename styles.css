@@ -1,0 +1,175 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #ffffff;
+    --font-family: 'Arial', sans-serif;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav {
+    text-align: right;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary-color), #81C784);
+    color: var(--secondary-color);
+    height: 100vh;
+}
+
+.hero-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.hero-description {
+    margin: 1rem 0;
+}
+
+.about, .features, .contact {
+    padding: 2rem 1rem;
+}
+
+.colaboradores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 16px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    background-color: #81C784;
+    padding: 16px;
+    text-align: center;
+}
+  
+.card-content h3 {
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.card-content p {
+    margin: 0;
+    font-size: 1em;
+    color: #fff;
+}
+
+@media(max-width: 768px) {
+    .colaboradores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-content h3 {
+        font-size: 1em;
+    }
+    
+    .card-content p {
+        font-size: .8em;
+    }
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.feature {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input, button {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
